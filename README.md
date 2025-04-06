@@ -1,6 +1,8 @@
-# Clang
+### Clang
  
 - Bubble sort
+
+    - ArrayLength 
     ```C
-    countArrLen = izeof(arr) / sizeof(arr[0]);
+    countArrLen = sizeof(arr) / sizeof(arr[0]);
     ```
