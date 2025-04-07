@@ -1,10 +1,10 @@
-### Clang
+MEMO 📝
  
 - Bubble sort
 
-    - ArrayLength 
+- ArrayLength 
     ```C
-    countArrLen = sizeof(arr) / sizeof(arr[0]);
+    ArrayLength = sizeof(Array) / sizeof(Array[0]);
     ```
 
 - Pointer Note :bulb: 
