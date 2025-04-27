@@ -31,16 +31,44 @@
 //----------Test Squaring - pass by reference end----------
 
 //----------Test Pointer and array start----------
-int main (void){
-int i;
-char multiple[] = "a string";
-char *p = multiple;
+// int main (void){
+// int i;
+// char multiple[] = "a string";
+// char *p = multiple;
 
-for(i = 0; i < strlen(multiple); ++i)
-printf("multiple[%d] = %c  *(p+%d) =  %c  &multiple[%d] = %p  p+%d = %p\n",
-i, multiple[i], i, *(p+i), i, &multiple[i], i, p+i);
+// for(i = 0; i < strlen(multiple); ++i)
+// printf("multiple[%d] = %c  *(p+%d) =  %c  &multiple[%d] = %p  p+%d = %p\n",
+// i, multiple[i], i, *(p+i), i, &multiple[i], i, p+i);
 
-return 0;
+// return 0;
 
-}
+// }
 //----------Test Pointer and array end----------
+
+
+//----------Test Pointer and loop start----------
+// int main (){
+//     int i;
+//     char multiple[]="aabbcc";
+//     char *p = multiple;
+
+//     for( i=0 ; i < strlen(multiple); ++i)
+//     printf("%c", multiple[i]);
+//     return 0;
+// }
+
+
+int main() {
+    int array[] = {1, 2, 3, 4, 5};
+    int *p = array;
+    int *arrayEnd = array + sizeof(array)/sizeof(array[0]);
+    int sum = 0;
+    printf("%p\n", (void *)array);
+    while (p < arrayEnd)
+        sum += *p++;
+
+    printf("The value is %d", sum);
+
+    return 0;
+}
+//----------Test Pointer and loop end----------
