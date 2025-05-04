@@ -58,17 +58,50 @@
 // }
 
 
-int main() {
-    int array[] = {1, 2, 3, 4, 5};
-    int *p = array;
-    int *arrayEnd = array + sizeof(array)/sizeof(array[0]);
-    int sum = 0;
-    printf("%p\n", (void *)array);
-    while (p < arrayEnd)
-        sum += *p++;
+// int main() {
+//     int array[] = {1, 2, 3, 4, 5};
+//     int *p = array;
+//     int *arrayEnd = array + sizeof(array)/sizeof(array[0]);
+//     int sum = 0;
+//     printf("%p\n", (void *)array);
+//     while (p < arrayEnd)
+//         sum += *p++;
 
-    printf("The value is %d", sum);
+//     printf("The value is %d\n", sum);
 
-    return 0;
+//     return 0;
+// }
+
+int arraySum (int *array, const int n)
+{
+    int sum =0 ;
+    int *const arrayEND = array +n ;
+    
+    for(; array < arrayEND; ++array)
+    sum += *array ;
+    return sum ;
 }
+void main(void ){
+    int arraySum(int *array, const int n );
+    int values[10] = {3,7,-9,3,6,-1,7,9,1,-5};
+    printf("The sum is %i\n",arraySum(values,10));
+}
+
+
+
+
 //----------Test Pointer and loop end----------
+
+// #include <stdio.h>
+
+
+// int main()
+
+// {
+//     int a = 15;
+//     void *ptr = (int *)&a;
+//     printf("%d\n", *(int *)ptr);
+//     return 0;
+
+// }
+
