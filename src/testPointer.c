@@ -72,20 +72,20 @@
 //     return 0;
 // }
 
-int arraySum (int *array, const int n)
-{
-    int sum =0 ;
-    int *const arrayEND = array +n ;
+// int arraySum (int *array, const int n)
+// {
+//     int sum =0 ;
+//     int *const arrayEND = array +n ;
     
-    for(; array < arrayEND; ++array)
-    sum += *array ;
-    return sum ;
-}
-void main(void ){
-    int arraySum(int *array, const int n );
-    int values[10] = {3,7,-9,3,6,-1,7,9,1,-5};
-    printf("The sum is %i\n",arraySum(values,10));
-}
+//     for(; array < arrayEND; ++array)
+//     sum += *array ;
+//     return sum ;
+// }
+// void main(void ){
+//     int arraySum(int *array, const int n );
+//     int values[10] = {3,7,-9,3,6,-1,7,9,1,-5};
+//     printf("The sum is %i\n",arraySum(values,10));
+// }
 
 
 
@@ -105,3 +105,26 @@ void main(void ){
 
 // }
 
+
+// int main() {
+//     int x = 10;
+//     int *p = &x;  // p is a pointer to x
+
+//     printf("Value of x: %d\n", x);
+//     printf("Address of x: %p\n", (void*)&x);
+//     printf("Value of p (address of x): %p\n", (void*)p);
+//     printf("Value pointed to by p: %d\n", *p); // dereferencing the pointer
+
+//     return 0;
+// }
+
+int main(){
+    int x = 10;
+    int *p = &x ;
+    printf("x = %d\n", x);
+    printf("&x = %p\n", (void*)&x);
+    printf("p = %p\n",(void*)p);
+    printf("*p = %d\n",*p);
+
+    return 0;
+}
